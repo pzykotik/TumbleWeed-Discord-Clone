@@ -78,7 +78,7 @@ Prerequesites:
 1. Clone the repo anywhere on your computer.
 2. Create a folder called memory. This will hold the blog following list. (TODO: Automate this)
 3. Open a Node.js command prompt and install the dependencies with the command: npm install.
-4. Copy the settings.
+4. Copy the file settings-example.json and rename it to: settings.json.
 5. Add your OAuth info and Discord Bot token to your settings file.
 6. Run the bot.
 
