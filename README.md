@@ -57,17 +57,6 @@ Sometimes, despite using "from:" syntax, it seems to return some wrong statuses.
 
 Since searches are complex, I didn't provide a URL version of unfollow for it. However, you may use `tw!twitter list` to see a list of searches active in this channel with numerical indexes provided, then you may unfollow by using those.
 
-## Invite to your server ##
-
-You can use [this link](https://discordapp.com/oauth2/authorize?client_id=306492836461936640&scope=bot&permissions=335547392) to invite it.
-
-It will try to create custom roles for permissions. If denied, then it will go off of user permissions:
-
-* TumbleWeed Administrator: Guild owner or Administrator permission
-* TumbleWeed Content Provider: Embed Links and Manage Messages
-
-However, if you want a custom avatar or want to avoid rate limiting (on the social media sites) you'll need to run your own.
-
 ## How to run your own ##
 
 Prerequesites: 
@@ -84,7 +73,7 @@ Prerequesites:
 
 As a shell script:
 
-	git clone -b release https://github.com/logicplace/TumbleWeed-Discord
+	git clone -b release https://github.com/pzykotik/TumbleWeed-Discord-Clone
 	mkdir memory
 	npm install
 	cp settings-example.json settings.json
@@ -129,3 +118,14 @@ Finally, add your userID in settings.json under discord.admin in quotes. So it w
 "content": [],
 "token": "xxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxx"
 }
+
+## Invite to your server ##
+
+You can use [this link](https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=335547392) to invite it.
+
+It will try to create custom roles for permissions. If denied, then it will go off of user permissions:
+
+* TumbleWeed Administrator: Guild owner or Administrator permission
+* TumbleWeed Content Provider: Embed Links and Manage Messages
+
+However, if you want a custom avatar or want to avoid rate limiting (on the social media sites) you'll need to run your own.
