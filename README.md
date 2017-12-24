@@ -124,8 +124,8 @@ Afterwards, select to add a bot to this. Reveal its token to put in the settings
 Finally, add your userID in settings.json under discord.admin in quotes. So it would look like:
 
 },
-	"discord": {
-		"admin": ["0000000000000000"],
-		"content": [],
-		"token": "xxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxx"
-	}
+"discord": {
+"admin": ["0000000000000000"],
+"content": [],
+"token": "xxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxx"
+}
