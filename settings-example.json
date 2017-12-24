@@ -1,6 +1,6 @@
 {
 	"prefix": "tw!",
-	"sender": "console",
+	"sender": "discord",
 	"tumblr": {
 		"oauth": {
 			"consumer_key": "OAuth Consumer Key",
