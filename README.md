@@ -6,9 +6,11 @@ Have it follow certain people or whatever and share the link in a channel of you
 
 It currently supports Tumblr and Twitter.
 
+Updated by pzykotik - the original bot is currently down, so this tutorial has been updated to provide help to run it yourself from scratch.
+
 ## How to use this bot ##
 
-When it joins your server for the first time it will create two new roles: TumbleWeed Admin and TumbleWeed Content Provider. You may rename these if you want.
+When it joins your server for the first time it will create two new roles: TumbleWeed Admin and TumbleWeed Content Provider. You may rename these if you want. Assign these to people you want to have access to certain bot functions.
 
 The bot will check for updates every 10 minutes and saves its data every hour (also when you close it).
 
@@ -68,9 +70,14 @@ However, if you want a custom avatar or want to avoid rate limiting (on the soci
 
 ## How to run your own ##
 
-1. Clone the repo.
-2. Make the memory directory. (TODO: Automate this)
-3. Install the dependencies.
+Prerequesites: 
+-Node.js [here](https://nodejs.org/en/download/)
+-Git [here](https://git-scm.com/downloads)
+-Discord.js (in Node.js command prompt: npm install discord.js)
+
+1. Clone the repo anywhere on your computer.
+2. Create a folder called memory. This will hold the blog following list. (TODO: Automate this)
+3. Open a Node.js command prompt and install the dependencies with the command: npm install.
 4. Copy the settings.
 5. Add your OAuth info and Discord Bot token to your settings file.
 6. Run the bot.
@@ -110,6 +117,15 @@ You may go [here](https://discordapp.com/developers/applications/me) to create a
 
 You must add a redirect URI but you can put anything for it. TumbleWeed's is http://tumbleweed.logicplace.com/discord/auth
 
-Put your custom avatar as the App Icon.
+Put your custom avatar as the App Icon if you wish.
 
-Afterwards, select to add a bot to this. Reveal its token to put in the settings under discord.token
+Afterwards, select to add a bot to this. Reveal its token to put in the settings.json under discord.token
+
+Finally, add your userID in settings.json under discord.admin in quotes. So it would look like:
+
+},
+	"discord": {
+		"admin": ["0000000000000000"],
+		"content": [],
+		"token": "xxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxx"
+	}
